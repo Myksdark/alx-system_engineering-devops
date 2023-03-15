@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -n '' $1 | sed -n '1~2s/^[0-9]*://p' 
+paste -d, - - | cut -d, -f1
